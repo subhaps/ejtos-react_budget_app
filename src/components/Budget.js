@@ -4,8 +4,8 @@ import { AppContext } from '../context/AppContext';
 const Budget = () => {
     const { budget, currency } = useContext(AppContext);
  
-    const [setBudget] = useState(budget);
-
+    const [setBudget] = useState('');
+   
     return (
         <div className='alert alert-secondary'>
             Budget: {currency}
